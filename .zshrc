@@ -113,6 +113,7 @@ export PATH="/usr/local/sbing:$PATH"
 # Zsh config && reload
 # alias reload="source ~/.zshrc"
 alias rs="omz reload"
+alias reload="omz reload"
 alias zshconfig="code ~/.zshrc"
 
 # Copy ssh
@@ -123,6 +124,14 @@ alias kan="killall node"
 alias ys="yarn start"
 alias nd="npm run dev"
 alias ns="npm start"
+alias rm="trash"
+
+# PNPM
+alias ps="pnpm start"
+alias pd="pnpm dev"
+alias pb="pnpm build"
+alias pa="pnpm add"
+alias pi="pnpm install"
 
 SPACESHIP_USER_SHOW="always"  
 
@@ -145,12 +154,15 @@ eval $(thefuck --alias fuck)
 # Starship prompt
 eval "$(starship init zsh)"
 
-# Remove need to enter passphrase
-# eval `ssh-agent -s`
-
 # Alias for dotfiles management
-# conig === git but for dotfiles only
-# To do git commands use config instead eg. config add path/to/file || config commit … || config push
-# PROTIP: `config add -u` adds ONLY modified files without adding all the other files in the work tree
+# dotfiles === git but for dotfiles only
+# To do git commands use dotfiles instead eg. dotfiles add path/to/file || dotfiles commit … || dotfiles push
+# PROTIP: `dotfiles add -u` adds ONLY modified files without adding all the other files in the work tree
 # https://www.youtube.com/watch?v=tBoLDpTWVOM
-alias config='/usr/bin/git --git-dir=$HOME/Sites/dotfiles/ --work-tree=$HOME' 
+alias dotfiles='/usr/bin/git --git-dir=$HOME/Sites/dotfiles/ --work-tree=$HOME' 
+
+
+## ADD SSH KEY
+# Add ssh key `ssh-add`
+# check if added `ssh-add -l`
+# supposedly permanent add `ssh-add -K`

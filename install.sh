@@ -12,7 +12,7 @@ echo "Homebrew installed"
 
 echo "Installing terminal applications…"
 # Install brew applications
-brew install zsh zsh-autosuggest zsh-syntax-highlight gh nvm speedtest-cli thefuck yarn z starship
+brew install zsh zsh-autosuggest zsh-syntax-highlight gh nvm speedtest-cli thefuck yarn z starship screenfetch htop
 echo "Terminal applications installed"
 
 echo "Installing ohmyzsh…"
