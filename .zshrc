@@ -1,3 +1,7 @@
+# Fig pre block. Keep at the top of this file.
+export PATH="${PATH}:${HOME}/.local/bin"
+eval "$(fig init zsh pre)"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -166,3 +170,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/Sites/dotfiles/ --work-tree=$HOME'
 # Add ssh key `ssh-add`
 # check if added `ssh-add -l`
 # supposedly permanent add `ssh-add -K`
+
+# Fig post block. Keep at the bottom of this file.
+eval "$(fig init zsh post)"
+
